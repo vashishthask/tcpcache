@@ -12,7 +12,7 @@ import javax.xml.transform.stream.StreamSource;
 public class PrettyXml {
     public String getXmlString(String input) throws Exception {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        try {transformerFactory.setAttribute("indent-number", new Integer(2)); } catch (Exception e){}
+        try {transformerFactory.setAttribute("indent-number", Integer.valueOf(2)); } catch (Exception e){}
         Transformer transformer = transformerFactory.newTransformer();
         try {transformer.setOutputProperty("{http://xml.apache.org/xalan}indent-amount", "2"); } catch (Exception e){}
         transformer.setOutputProperty(OutputKeys.INDENT , "yes");

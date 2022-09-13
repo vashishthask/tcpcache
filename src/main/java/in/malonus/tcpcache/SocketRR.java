@@ -20,16 +20,11 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-import org.slf4j.LoggerFactory;
-
 /**
  * this class handles the pumping of data from the incoming socket to the
  * outgoing socket
  */
 class SocketRR {
-    private static final org.slf4j.Logger log = LoggerFactory
-            .getLogger(SocketRR.class);
-
     /**
      * Field inSocket
      */
@@ -148,9 +143,9 @@ class SocketRR {
                     if (config.isCachingOn()
                             && (response.contains("</soap:Envelope>") || response
                                     .contains("</soapenv:Envelope>"))) {
-                        MocktailCache mocktailCache = new MocktailCache(config,
+                        DiskCache diskCache = new DiskCache(config,
                                 response);
-                        mocktailCache.saveInMocktailRepository();
+                        diskCache.saveInDiskRepository();
                     }
                 }
             }

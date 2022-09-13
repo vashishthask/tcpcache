@@ -49,7 +49,7 @@ public class Configuration {
         try {
             config.load(this.getClass().getClassLoader().getResourceAsStream("tcpcache.properties"));
         } catch (Exception e) {
-            log.error("MocktailConfig could not be loaded from classpath:" + e.getClass().getName() + ":message:"
+            log.error("CacheConfig could not be loaded from classpath:" + e.getClass().getName() + ":message:"
                     + e.getMessage());
         }
     }

@@ -132,7 +132,6 @@ class Connection extends Thread {
                 inSocketOutputStream = inSocket.getOutputStream();
             }
             String bufferedData = null;
-            StringBuffer buf = null;
             // FIXME
             if (isProxySelected()) {
                 bufferedData = createInputRequestWithProxy(incomingStream);
@@ -343,7 +342,6 @@ class Connection extends Thread {
             // FIXME
             if (isProxySelected()) {
                 url = new URL(urlString);
-                String targetHost = url.getHost();
                 int targetPort = url.getPort();
                 if (targetPort == -1) {
                     targetPort = 80;

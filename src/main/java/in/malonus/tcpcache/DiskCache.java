@@ -2,19 +2,19 @@ package in.malonus.tcpcache;
 
 import java.io.File;
 
-public class MocktailCache {
+public class DiskCache {
     
     private Configuration config;
     private CacheFileInfo cacheFileInfo;
     private String response;
 
-    public MocktailCache(Configuration config, String response){
+    public DiskCache(Configuration config, String response){
         this.config = config;
         this.cacheFileInfo = new CacheFileInfo(config);
         this.response = response;
     }
     
-    public void saveInMocktailRepository() {
+    public void saveInDiskRepository() {
         CacheMode cacheMode = config.getCacheMode();
         if(CacheMode.RECORDING_NEW.equals(cacheMode))
             clearObjectOnDisk(config.getTestClassName());
