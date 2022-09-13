@@ -5,7 +5,7 @@ tcpcache is a fork on http://ws.apache.org/commons/tcpmon/ and can be used to ca
 From the original tcpmon source, GUI part is stripped. "tcpcache" is useful in following scenarios: 
 
 * **Caching:**
-SOAP or TCP response can be cached. In that case configuration (mocktailconfig.properties) need to have
+SOAP or TCP response can be cached. In that case configuration (cacheconfig.properties) need to have
 "chachingOn" property as "true".
 
 * **Printing SOAP response:**
