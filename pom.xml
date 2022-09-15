@@ -2,18 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>in.malonus</groupId>
-  <artifactId>tcpcache</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-
-  <name>tcpcache</name>
-  <url>https://github.com/vashishthask/tcpcache</url>
   <parent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
     <version>9</version>
   </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.vashishthask</groupId>
+  <artifactId>tcpcache</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>tcpcache</name>
+  <url>https://github.com/vashishthask/tcpcache</url>
+  
   <properties>
     <log4j.version>2.18.0</log4j.version>
     <maven.compiler.source>1.8</maven.compiler.source>

@@ -14,7 +14,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package in.malonus.tcpcache;
+package io.github.vashishthask.tcpcache;
 
 import java.io.IOException;
 import java.net.ServerSocket;

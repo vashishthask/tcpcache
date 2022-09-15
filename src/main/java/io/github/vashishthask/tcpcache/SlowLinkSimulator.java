@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package in.malonus.tcpcache;
+package io.github.vashishthask.tcpcache;
 
 /**
  * class to simulate slow connections by slowing down the system

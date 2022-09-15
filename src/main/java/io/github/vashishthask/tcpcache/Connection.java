@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package in.malonus.tcpcache;
+package io.github.vashishthask.tcpcache;
 
 import java.io.IOException;
 import java.io.InputStream;

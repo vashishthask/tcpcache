@@ -1,4 +1,4 @@
-package in.malonus.tcpcache;
+package io.github.vashishthask.tcpcache;
 
 public class DiskObjectRepository {
     private ObjectFileOperations fileOperations = new ObjectFileOperations();
