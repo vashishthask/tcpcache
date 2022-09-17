@@ -12,6 +12,16 @@ SOAP or TCP response can be cached. In that case configuration (cacheconfig.prop
 If you don't want caching ON, you can switch that off using configuration. In that case, 
 it works as tcpmon without GUI which is useful to print SOAP responses.
 
+### Available on Maven Central
+The library can be used with following Maven dependency:
+```xml
+<dependency>
+  <groupId>io.github.vashishthask</groupId>
+  <artifactId>tcpcache</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 ### Sample tcpcache.properties
 
 	## by default caching is ON. In this case the library works as stripped down version of tcpmon
